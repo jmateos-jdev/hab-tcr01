@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Title from './components/Title'
+import ButtonCount from './components/ButtonCount'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -17,11 +16,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <Title title="Vite + React" />
+      <Title title="Hola HAB" />
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <ButtonCount />
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
