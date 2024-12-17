@@ -18,7 +18,4 @@ test('ButtonCount renderiza correctamente', async () => {
 
     const pElement = await screen.findByText('Contador: 3');
     expect(pElement).toBeInTheDocument();
-
-
-
 });
